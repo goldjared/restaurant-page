@@ -12,7 +12,8 @@ function pageHead(){
   headerName.append(headerImg);
 
 
-  const headerOptions = document.createElement('header-options');
+  const headerOptions = document.createElement('div');
+  headerOptions.classList.add('header-options');
   header.append(headerOptions);
 
   const menu = document.createElement('div');
