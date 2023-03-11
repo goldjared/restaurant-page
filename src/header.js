@@ -1,7 +1,7 @@
 
 
 function pageHead(){
-  const content = document.querySelector('#content');
+  // const content = document.querySelector('#content');
   const header = document.createElement('header');
   const headerName = document.createElement('header-name');
   headerName.textContent = 'Enidras';
