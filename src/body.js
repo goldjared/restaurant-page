@@ -1,9 +1,4 @@
-// {/* <main>
-//     <img src="" alt="head chef">
-//     <div class="text">Enidras is more.</div>
-//   </main> */}
-import image from './askelad.jpg';
-
+import image from "./images/pexels-mayeli-herrera-❞-14927334.jpg";
 
 function pageBody(){
   // const content = document.querySelector('#content');
