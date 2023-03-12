@@ -14,10 +14,16 @@ pageLoad();
 
 const pages = document.querySelector('.header-options');
 
+(function pageListener() { 
 pages.addEventListener('click', (e) => {
   e.preventDefault();
-  pageLoad(e.target.innerText);
+  while (content.firstChild) {
+    content.removeChild(content.firstChild);
+  }
+  let page = e.target.innerText.toLowerCase();
+  pageLoad(page);
 })
+}());
 
 
 
