@@ -3,7 +3,8 @@
 function pageHead(){
   // const content = document.querySelector('#content');
   const header = document.createElement('header');
-  const headerName = document.createElement('header-name');
+  const headerName = document.createElement('div');
+  headerName.classList.add('header-name');
   headerName.textContent = 'Enidras';
   const headerImg = document.createElement('img');
 
