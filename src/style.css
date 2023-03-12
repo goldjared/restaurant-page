@@ -76,7 +76,8 @@ header {
   background-color: rgb(61, 61, 61);
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   
 }
@@ -111,7 +112,8 @@ footer {
   background-color: rgb(61, 61, 61);
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .text {
