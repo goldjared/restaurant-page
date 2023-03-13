@@ -1,29 +1,28 @@
 import { pageLoad } from "./loader";
 import { pageHead } from "./header";
-import { pageBody } from "./body";
-import { pageFoot } from "./footer";
 import './style.css';
 
-const content = document.querySelector('#content');
+(function site() {
+  const content = document.querySelector('#content');
 
-pageLoad();
-// console.log('hello');
-// pageHead();
-// pageBody();
-// pageFoot();
+  pageHead();
+  pageLoad();
 
-const pages = document.querySelector('.header-options');
+  let pages = document.querySelector('.header-options');
 
-(function pageListener() { 
-pages.addEventListener('click', (e) => {
-  e.preventDefault();
-  while (content.firstChild) {
-    content.removeChild(content.firstChild);
-  }
-  let page = e.target.innerText.toLowerCase();
-  pageLoad(page);
-})
-}());
+  (function pageListener() {
+    pages.addEventListener('click', (e) => {
+      e.preventDefault();
+      content.removeChild(content.lastChild);
+      let page = e.target.innerText.toLowerCase();
+      console.log(page);
+      pageLoad(page);
+    });
+  })();
+})();
+
+
+
 
 
 
