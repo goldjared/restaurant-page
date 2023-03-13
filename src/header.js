@@ -20,13 +20,13 @@ function pageHead(){
   const menu = document.createElement('div');
   menu.classList.add('menu');
   const menuLink = document.createElement('a');
-  menuLink.setAttribute('href', 'linkurl');
+  menuLink.setAttribute('href', '');
   menuLink.textContent = 'Menu';
 
   const order = document.createElement('div');
   order.classList.add('order');
   const orderLink = document.createElement('a');
-  orderLink.setAttribute('href', 'linkurl');
+  orderLink.setAttribute('href', '');
   orderLink.textContent = 'Order';
 
   const contact = document.createElement('div');
