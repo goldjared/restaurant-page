@@ -1,0 +1,20 @@
+import { pageBody } from "./body";
+import { menuPage } from "./menu";
+import { orderPage } from "./order";
+
+function pageLoad(tab) {
+  if(tab === undefined) {
+    pageBody();
+  } else {
+    switch(tab) {
+      case 'menu':
+        menuPage();
+        break;
+      case 'order':
+        orderPage();
+        break;
+  };
+  };
+};
+
+export {pageLoad}
